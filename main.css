@@ -1,0 +1,84 @@
+/* első lépés egy egyszerű css reset, border-box modellel */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* layout */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  width: 340px;
+  max-width: calc(100vw-10px);
+  margin: 90px auto 20px;
+}
+header, article{
+  margin: 0 auto;
+  width: 90%;
+}
+
+header, .about{
+  margin-bottom: 5%;
+}
+article{
+  padding: 3% 3%;
+}
+.curriculum{
+  margin-bottom: 10%;
+  border-top: 2px solid chartreuse;
+  padding-top: 10%;
+}
+img{
+  margin-top: -80px;
+}
+li{
+  display: inline;
+}
+/* style */
+body{
+  background: url('assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: chartreuse;
+}
+main{
+  background-color: hsla(100, 100%, 0%, .8);
+  border-radius: 10px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+header, footer{
+  text-align: center;
+}
+img{
+  width: 100px;
+  height: 160px;
+  border-radius: 10px;
+  transition: .2s;
+  transition-delay: .2s;
+  box-shadow: hsla(90, 100%, 50%, .8) 10px 10px 40px;
+}
+img:hover{
+  border-radius: 99px;
+  transform: rotate(450deg);
+  box-shadow: hsla(0, 100%, 50%, .8) 10px 10px 100px;
+}
+.name, .location, .curriculum{
+  font-family: 'Barrio', cursive;
+}
+.profession, .about{
+  font-family: 'Roboto Mono', monospace;
+}
+.profession{
+  font-size: 1.3rem;
+  color: ghostwhite;
+}
+i{
+  font-size: 3rem;
+  padding: 10px;
+  color: chartreuse;
+}
+i:hover{
+  color: red;
+}
